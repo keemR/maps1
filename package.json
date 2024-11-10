@@ -1,0 +1,22 @@
+{
+  "name": "google-maps-scraper",
+  "version": "1.0.0",
+  "description": "Chrome extension to scrape business data from Google Maps",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build step required\"",
+    "start": "echo \"This is a Chrome extension - load it in Chrome to use\""
+  },
+  "keywords": [
+    "google-maps",
+    "scraper",
+    "chrome-extension"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chrome-types": "^0.1.231"
+  }
+}

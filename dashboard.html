@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Maps Scraper Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>Google Maps Scraper Dashboard</h1>
+      <div class="actions">
+        <button id="pauseButton">Pause</button>
+        <button id="exportButton" class="primary">Export Data</button>
+      </div>
+    </header>
+
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <h2 id="totalListings">0</h2>
+        <p>Total Listings</p>
+      </div>
+      <div class="metric-card">
+        <h2 id="processedCount">0</h2>
+        <p>Processed</p>
+      </div>
+      <div class="metric-card">
+        <h2 id="dataCollected">0</h2>
+        <p>Data Collected</p>
+      </div>
+    </div>
+
+    <div class="data-table-container">
+      <table id="businessTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Rating</th>
+            <th>Reviews</th>
+            <th>Website</th>
+          </tr>
+        </thead>
+        <tbody id="businessData"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>

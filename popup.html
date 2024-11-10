@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Maps Scraper</title>
+  <style>
+    body {
+      width: 350px;
+      padding: 15px;
+      font-family: 'Google Sans', Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background: #3367d6;
+    }
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    .instructions {
+      background: #f8f9fa;
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #5f6368;
+      margin-bottom: 12px;
+    }
+    #status {
+      margin-top: 10px;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    .error {
+      background: #fce8e6;
+      color: #d93025;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Google Maps Scraper</h2>
+    
+    <div class="instructions">
+      1. Search for businesses on Google Maps
+      2. Click "Start Scraping"
+      3. Open dashboard to view progress
+    </div>
+
+    <button id="startScraping">Start Scraping</button>
+    <button id="openDashboard">Open Dashboard</button>
+    
+    <div id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
